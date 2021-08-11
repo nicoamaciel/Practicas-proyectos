@@ -43,7 +43,7 @@ float promEdad=0;
 float porceOptimos=0;
 
 
-for (int a=0; a<4; a++){
+for (int a=0; a<245800; a++){
     cout << "Ingrese codigo del arbol: ";
     cin >> codigoArbol;
     cout << "Ingrese edad del arbol: ";

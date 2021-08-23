@@ -97,5 +97,6 @@ cout << "Punto B: Promedio de edad entre todos los arboles: " << promEdad;
 cout << endl << "-----------------------------------------------" << endl;
 cout << "Punto C: Porcentaje de arboles optimos respecto al total: %" << porceOptimos;
 
+    
 return 0;
 }

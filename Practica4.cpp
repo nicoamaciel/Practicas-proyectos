@@ -1,17 +1,17 @@
-/*La SecretarÌa de Espacios Verdes tiene un inventario de todos los ·rboles del Municipio de
-General Lara. Por cada uno de ellos se registrÛ la siguiente informaciÛn:
+/*La Secretar√≠a de Espacios Verdes tiene un inventario de todos los √°rboles del Municipio de
+General Lara. Por cada uno de ellos se registr√≥ la siguiente informaci√≥n:
 
-- CÛdigo de ·rbol (entero)
-- Edad del ·rbol (entero)
+- C√≥digo de √°rbol (entero)
+- Edad del √°rbol (entero)
 - Altura (float)
-- Estado general del ·rbol (1 - ”ptimo, 2 - Satisfactorio, 3 - Enfermo, 4 - Peligroso)*/
+- Estado general del √°rbol (1 - √ìptimo, 2 - Satisfactorio, 3 - Enfermo, 4 - Peligroso)*/
 
-/***El fin de datos se ingresa con un cÛdigo de ·rbol negativo. Se pide calcular e informar:***/
+/***El fin de datos se ingresa con un c√≥digo de √°rbol negativo. Se pide calcular e informar:***/
 
 /*
-A) La edad del ·rbol m·s alto que no sea peligroso. Indicar tambiÈn la altura.
-B) El promedio de altura de los ·rboles.
-C) El estado general del ·rbol que menos cantidad de ·rboles haya registrado.*/
+A) La edad del √°rbol m√°s alto que no sea peligroso. Indicar tambi√©n la altura.
+B) El promedio de altura de los √°rboles.
+C) El estado general del √°rbol que menos cantidad de √°rboles haya registrado.*/
 
 
 #include <iostream>
@@ -116,10 +116,10 @@ int main (){
     cout << "Edad del arbol mas alto que no sea peligroso: "  << edadNoPeligroso << " Anos - Altura: " << maxAltura << endl;
     cout << endl << "--------------------------------------" << endl;
     cout << "Punto B:" << endl;
-    cout << "Promedio de altura de los ·rboles: #" << promedioAltura << endl;
+    cout << "Promedio de altura de los √°rboles: #" << promedioAltura << endl;
     cout << endl << "--------------------------------------" << endl;
     cout << "Punto C: " << endl;
-    cout << "El estado general del ·rbol que menos cantidad de ·rboles haya registrado: " << endl;
+    cout << "El estado general del √°rbol que menos cantidad de √°rboles haya registrado: " << endl;
     if(menosEstado == 1) {
         cout << "Optimo" << endl;
     }
@@ -136,7 +136,6 @@ int main (){
             }
         }
     }
-
 
 return 0;
 }

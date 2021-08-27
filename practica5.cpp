@@ -138,6 +138,7 @@ cout << "Punto D: El promedio de altura de los arboles optimos: " << promAltOpti
 
 
 
+ 
 return 0;
 }
 

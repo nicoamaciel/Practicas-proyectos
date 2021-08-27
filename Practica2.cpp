@@ -98,5 +98,6 @@ cout << endl << "-----------------------------------------------" << endl;
 cout << "Punto C: Porcentaje de arboles optimos respecto al total: %" << porceOptimos;
 
     
+    
 return 0;
 }

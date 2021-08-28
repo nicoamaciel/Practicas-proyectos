@@ -129,6 +129,5 @@ int main (){
     cout << "Punto C: Codigo de arbol enfermo que mayor altura registro: " << maxCodArbol << " Altura: "<< maxAlturaEnf << endl;
     cout << endl << "-------------------------------" << endl;
     cout << "Punto D: Porcentaje de Arboles enfermos en relacion al total: " << porArbolesEnf << " %" <<endl;
-
 return 0;
 }

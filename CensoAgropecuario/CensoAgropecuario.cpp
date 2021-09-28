@@ -1,20 +1,20 @@
 /*Problema 1
-Un censo agropecuario recabó información de 10 productores a lo largo de los últimos 5 años. Por cada año y productor registró:
+Un censo agropecuario recabÃ³ informaciÃ³n de 10 productores a lo largo de los Ãºltimos 5 aÃ±os. Por cada aÃ±o y productor registrÃ³:
 
-- Código de productor
-- Número de año (1 a 5)
+- CÃ³digo de productor
+- NÃºmero de aÃ±o (1 a 5)
 - Cantidad de nacimientos de cerdos
 - Cantidad de nacimientos de ovejas
 - Cantidad de nacimientos de vacas
 
-Los datos se encuentran agrupados por código de productor. Por cada productor,
-la información está ordenada por año. Se pide calcular e informar:
+Los datos se encuentran agrupados por cÃ³digo de productor. Por cada productor,
+la informaciÃ³n estÃ¡ ordenada por aÃ±o. Se pide calcular e informar:
 
-A) Por cada productor, la cantidad de años en que no haya producido cerdos.
-B) El productor que menos animales haya producido en el primer año de trabajo.
+A) Por cada productor, la cantidad de aÃ±os en que no haya producido cerdos.
+B) El productor que menos animales haya producido en el primer aÃ±o de trabajo.
 C) El porcentaje de cerdos, ovejas y vacas producidos en total.
-D) La cantidad de años en los que se hayan producido únicamente cerdos.
-E) Los años en los que se produjeron cerdos.
+D) La cantidad de aÃ±os en los que se hayan producido Ãºnicamente cerdos.
+E) Los aÃ±os en los que se produjeron cerdos.
 */
 
 #include <iostream>
@@ -47,17 +47,17 @@ float porVacas=0;
 int soloCerdos=0;
 
 //Punto E
-int AñoCerdos=0;
+int AÃ±oCerdos=0;
 
 
-for(int i=1; i<=2; i++){
+for(int i=1; i<=10; i++){
     int sinCerdos=0;
     cout << endl << "-------------------------------------" << endl;
     cout << "Ingrese codigo del productor numero " << i << " :";
     cin >>codProductor;
-    for(int j=1; j<=2; j++){
+    for(int j=1; j<=5; j++){
 
-        cout << "Ingres cuatro digitos del año numero " << j << " :";
+        cout << "Ingres cuatro digitos del aÃ±o numero " << j << " :";
         cin >>numAnio;
         cout << endl << "-------------------------------------" << endl;
         cout << "Ingrese cantidad de nacimientos de cerdos: ";
@@ -68,7 +68,7 @@ for(int i=1; i<=2; i++){
         cin >> nacVacas;
         cout << endl << "-------------------------------------" << endl;
 
-        //Produccion x año
+        //Produccion x aÃ±o
         prodAnimales = nacCerdos + nacOvejas + nacVacas;
         //Acumulacion produccion total
         totProduccion += prodAnimales;
@@ -112,18 +112,18 @@ for(int i=1; i<=2; i++){
         //PuntoE
 
         if(nacCerdos>0){
-            AñoCerdos++;
+            AÃ±oCerdos++;
         }
 
 
 
-    }//Fin ciclo años
-    cout << "Punto A: Años sin cerdos prodcutor: " << i << " :"<< sinCerdos << endl;
+    }//Fin ciclo aÃ±os
+    cout << "Punto A: AÃ±os sin cerdos prodcutor: " << i << " :"<< sinCerdos << endl;
 
 
 }//Fin ciclo productor
 
-cout << "Punto B: Productor que menos animales producion el primer año de trabajo: " << menCodPro << endl;
+cout << "Punto B: Productor que menos animales producion el primer aÃ±o de trabajo: " << menCodPro << endl;
 cout << endl << "---------------------------------------------------------------------------------------" << endl;
 cout << "Punto C: Porcentaje produccion cerdos: " << porCerdos << endl;
 cout << "Punto C: Porcentaje produccion ovejas: " << porOvejas << endl;
@@ -131,7 +131,7 @@ cout << "Punto C: Porcentaje produccion vacas: " << porVacas << endl;
 cout << endl << "---------------------------------------------------------------------------------------" << endl;
 cout << "Punto D: Solo produccion de cerdos: " << soloCerdos << endl;
 cout << endl << "---------------------------------------------------------------------------------------" << endl;
-cout << "Punto E: Años en los que se produjeron cerdons: " << AñoCerdos << endl;
+cout << "Punto E: AÃ±os en los que se produjeron cerdons: " << AÃ±oCerdos << endl;
 
 
 

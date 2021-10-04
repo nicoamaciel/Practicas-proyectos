@@ -1,49 +1,49 @@
 /**Primer parcial
 
 Enunciado - (100 puntos)
-El dueño de una estación de servicio dispone de algunos tanques de combustible en su estación de servicio.
-De cada tanque dispone de información del estado de combustible de los últimos tres días.
-Por cada tanque y día registra:
+El dueÃ±o de una estaciÃ³n de servicio dispone de algunos tanques de combustible en su estaciÃ³n de servicio.
+De cada tanque dispone de informaciÃ³n del estado de combustible de los Ãºltimos tres dÃ­as.
+Por cada tanque y dÃ­a registra:
 
-- Número de tanque (entero)
-- Número de día (1 a 3)
-- Litros totales al comienzo del día (real)
-- Litros totales al final del día (real)
-- Facturación del día (real)
+- NÃºmero de tanque (entero)
+- NÃºmero de dÃ­a (1 a 3)
+- Litros totales al comienzo del dÃ­a (real)
+- Litros totales al final del dÃ­a (real)
+- FacturaciÃ³n del dÃ­a (real)
 
-La información se encuentra agrupada por número de tanque.
-Dentro de cada tanque los datos están ordenados por día.
-Para indicar el fin de la carga de datos se ingresa un número de tanque igual a cero. Se pide calcular e informar:
+La informaciÃ³n se encuentra agrupada por nÃºmero de tanque.
+Dentro de cada tanque los datos estÃ¡n ordenados por dÃ­a.
+Para indicar el fin de la carga de datos se ingresa un nÃºmero de tanque igual a cero. Se pide calcular e informar:
 
-NOTA: La diferencia entre los litros totales al comienzo del día y los litros totales al final del día determinan
-la cantidad de litros vendidos en el día. Por ejemplo:
+NOTA: La diferencia entre los litros totales al comienzo del dÃ­a y los litros totales al final del dÃ­a determinan
+la cantidad de litros vendidos en el dÃ­a. Por ejemplo:
 
 	Tanque: 10
-	Día: 1
+	DÃ­a: 1
 	Litros al comienzo: 50000 lts
 	Litros al final: 44500 lts
-	Facturación: $ XXXXX
+	FacturaciÃ³n: $ XXXXX
 
-	Los litros vendidos en el día fueron (50000 - 44500) = 5500 lts
+	Los litros vendidos en el dÃ­a fueron (50000 - 44500) = 5500 lts
 
-A) La cantidad de litros vendidos por día.
+A) La cantidad de litros vendidos por dÃ­a.
 	Ejemplo:
-	Día 1: XXXX lts
-	Día 2: YYYY lts
-	Día 3: ZZZZ lts
+	DÃ­a 1: XXXX lts
+	DÃ­a 2: YYYY lts
+	DÃ­a 3: ZZZZ lts
 
-B) El número de tanque que haya registrado la menor cantidad de litros vendidos en un día.
-Indicar también la cantidad de litros y qué día fue.
+B) El nÃºmero de tanque que haya registrado la menor cantidad de litros vendidos en un dÃ­a.
+Indicar tambiÃ©n la cantidad de litros y quÃ© dÃ­a fue.
 
-C) Por cada tanque, el promedio de litros vendidos en total entre los tres días.
+C) Por cada tanque, el promedio de litros vendidos en total entre los tres dÃ­as.
 
-D) La cantidad de tanques distintos que vendieron más de 8000 lts en un día.
+D) La cantidad de tanques distintos que vendieron mÃ¡s de 8000 lts en un dÃ­a.
 
-E) El número de día en el que se despachó la mayor cantidad de litros.
+E) El nÃºmero de dÃ­a en el que se despachÃ³ la mayor cantidad de litros.
 
 ACLARACIONES:
-No habrá más de un tanque con la menor cantidad de litros vendidos en un día.
-No habrá más de un día con la mayor cantidad de litros despachados.
+No habrÃ¡ mÃ¡s de un tanque con la menor cantidad de litros vendidos en un dÃ­a.
+No habrÃ¡ mÃ¡s de un dÃ­a con la mayor cantidad de litros despachados.
 **/
 
 #include <iostream>
@@ -75,7 +75,7 @@ int contMay8=0;
 cout << "Bienvenido!" << endl;
 cout << "Ingrese numero de tanque: ";
 cin >> numTanq;
-while(numTanq){
+while(numTanq<=0){
         //PuntoC
         float promedioLts=0;
         float acuLts=0;
